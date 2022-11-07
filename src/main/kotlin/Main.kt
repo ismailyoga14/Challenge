@@ -1,9 +1,8 @@
-import kotlin.jvm.internal.PropertyReference0Impl
-
 fun main() { //pertama yang dibuat oleh saya yaitu membuat fun main
-    println("======CHALLENGE SUIT JEPANG======") //ini buat munculin kata yang keuar pertama kali ketika di running
-    println("============BY YOGA==============")
 
+    val s = suit("string") //ini implement dari abstract class
+    s.opening()
+    s.opening("BY YOGA==============")
 
     var player1: String //kita buat variable yang ingin kita masukkan di looping
     var player2: String
@@ -52,5 +51,5 @@ fun challenge(
             return "Pemain 2 win"
         }
     }
-    return "Gagal, masukkan data yang benar!"/// jika data input tidak sesuai dengan pengecekan diatas maka dikembalikan pesan tersebut
+    return "Gagal, masukkan data yang benar!"// jika data input tidak sesuai dengan pengecekan diatas maka dikembalikan pesan tersebut
 }
